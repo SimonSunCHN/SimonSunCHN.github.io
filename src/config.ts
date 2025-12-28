@@ -53,26 +53,36 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/demo-avatar.png", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
+	avatar: "assets/images/avatar01.jpg", // Relative to the /src directory. Relative to the /public directory if it starts with '/'
 	name: "SimonSunCHN",
 	bio: "HKU '28 Linguistics & CS",
 	links: [
 		{
-			name: "Twitter",
-			icon: "fa6-brands:twitter", // Visit https://icones.js.org/ for icon codes
+			name: "Facebook",
+			icon: "fa6-brands:facebook", // Visit https://icones.js.org/ for icon codes
 			// You will need to install the corresponding icon set if it's not already included
 			// `pnpm add @iconify-json/<icon-set-name>`
-			url: "https://twitter.com",
+			url: "https://www.facebook.com/SimonSunCHN",
+		},
+		{
+			name: "Instagram",
+			icon: "fa6-brands:instagram", 
+			url: "https://www.instagram.com/SimonSunCHN",
+		},
+		{
+			name: "BiliBili",
+			icon: "fa6-brands:bilibili",
+			url: "https://space.bilibili.com/86187142",
 		},
 		{
 			name: "Steam",
 			icon: "fa6-brands:steam",
-			url: "https://store.steampowered.com",
+			url: "https://steamcommunity.com/profiles/76561199377838650",
 		},
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/saicaca/fuwari",
+			url: "https://github.com/SimonSunCHN",
 		},
 	],
 };
@@ -80,7 +90,7 @@ export const profileConfig: ProfileConfig = {
 export const licenseConfig: LicenseConfig = {
 	enable: true,
 	name: "CC BY-NC-SA 4.0",
-	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+	url: "https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh-hans",
 };
 
 export const expressiveCodeConfig: ExpressiveCodeConfig = {
