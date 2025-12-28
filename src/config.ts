@@ -22,7 +22,7 @@ export const siteConfig: SiteConfig = {
 		credit: {
 			enable: true, // Display the credit text of the banner image
 			text: "Shot by SimonSunCHN, 2024-08-11, Osaka", // Credit text to be displayed
-			url: "", // (Optional) URL link to the original artwork or artist's page
+			url: undefined, // (Optional) URL link to the original artwork or artist's page
 		},
 	},
 	toc: {
@@ -44,6 +44,12 @@ export const navBarConfig: NavBarConfig = {
 		LinkPreset.Home,
 		LinkPreset.Archive,
 		LinkPreset.About,
+		{
+			name: "友链",
+			url: "/friends/", // trailingSlash is set to 'always' --SimonSunCHN
+			// Visit https://docs.astro.build/zh-cn/reference/configuration-reference/#trailingslash for more info --SimonSunCHN
+			external: false, 
+		},
 		{
 			name: "GitHub",
 			url: "https://github.com/SimonSunCHN", // Internal links should not include the base path, as it is automatically added
