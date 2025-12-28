@@ -1,3 +1,3 @@
 # SimonSunCHN.github.io
 
-A personal blog built with [Fuwari](https://github.com/saicaca/fuwari) and [Astro](https://astro.build).
+Personal blog. Powered by [Astro](https://astro.build) & [Fuwari](https://github.com/saicaca/fuwari). 
