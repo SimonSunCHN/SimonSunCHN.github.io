@@ -6,4 +6,4 @@
 
 ::link{url="https://hycrich.github.io/Faded.github.io/"}
 
-::link{url="https://neutralmilkzzz.github.io/"}
+::link{url="https://neutralmilkzzz.github.io/" description="SEE YOU SPACE COWBOY"}

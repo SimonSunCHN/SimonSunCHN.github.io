@@ -96,23 +96,25 @@ export function LinkCardComponent(properties, children) {
 			// Helper function to try multiple CORS proxies
 			async function fetchWithProxies(targetUrl) {
 				const proxies = [
-					'https://api.allorigins.win/get?url=',
-					'https://corsproxy.io/?',
-					'https://api.codetabs.com/v1/proxy?quest=',
+					{ url: 'https://api.allorigins.win/get?url=', type: 'json' },
+					{ url: 'https://corsproxy.io/?', type: 'html' },
+					{ url: 'https://api.codetabs.com/v1/proxy?quest=', type: 'html' },
+					{ url: 'https://cors-anywhere.herokuapp.com/', type: 'html' },
 				];
 				
 				for (const proxy of proxies) {
 					try {
-						const proxyUrl = proxy + encodeURIComponent(targetUrl);
+						const proxyUrl = proxy.url + encodeURIComponent(targetUrl);
 						const response = await fetchWithTimeout(proxyUrl, 3000);
 						
-						if (!response.ok) continue;
+						if (!response.ok) {
+							console.warn('[LINK-CARD] Proxy response not OK:', proxy.url, response.status);
+							continue;
+						}
 						
-						// Try to parse as JSON first
 						let html = null;
-						const contentType = response.headers.get('content-type') || '';
 						
-						if (contentType.includes('application/json')) {
+						if (proxy.type === 'json') {
 							try {
 								const data = await response.json();
 								html = data.contents || data.content || data.data || 
@@ -126,27 +128,25 @@ export function LinkCardComponent(properties, children) {
 							html = await response.text();
 						}
 						
-						if (html && html.trim().length > 0) {
+						if (html && html.trim().length > 100) {
+							// Ensure we got meaningful content (at least 100 chars)
 							return html;
 						}
 					} catch (err) {
-						console.warn('[LINK-CARD] Proxy failed:', proxy, err);
+						// Silently continue to next proxy
 						continue;
 					}
 				}
 				return null;
 			}
 			
-			// Helper function to get favicon
-			function updateFavicon(doc, baseUrl, defaultDomain) {
+			// Helper function to get favicon with timeout
+			async function updateFavicon(doc, baseUrl) {
 				if (!iconEl) return;
 				
-				const defaultIconUrl = 'https://www.google.com/s2/favicons?domain=' + defaultDomain + '&sz=64';
 				let faviconFound = false;
-				let attemptsCount = 0;
-				const maxAttempts = 10; // Total attempts across all methods
 				
-				// Try multiple favicon sources
+				// Try multiple favicon sources from HTML
 				const faviconSelectors = [
 					'link[rel="icon"]',
 					'link[rel="shortcut icon"]',
@@ -161,8 +161,17 @@ export function LinkCardComponent(properties, children) {
 							const iconUrl = favicon.startsWith('http') 
 								? favicon 
 								: new URL(favicon, baseUrl).href;
+							
+							// Test if favicon exists with timeout
 							const img = new Image();
+							const timeout = setTimeout(() => {
+								if (!faviconFound) {
+									img.src = '';
+								}
+							}, 2000);
+							
 							img.onload = () => {
+								clearTimeout(timeout);
 								if (!faviconFound) {
 									iconEl.style.backgroundImage = 'url(' + iconUrl + ')';
 									iconEl.style.backgroundColor = 'transparent';
@@ -170,16 +179,12 @@ export function LinkCardComponent(properties, children) {
 								}
 							};
 							img.onerror = () => {
-								attemptsCount++;
-								if (attemptsCount >= maxAttempts && !faviconFound) {
-									// Use default if all attempts failed
-									iconEl.style.backgroundImage = 'url(' + defaultIconUrl + ')';
-									iconEl.style.backgroundColor = 'transparent';
-								}
+								clearTimeout(timeout);
 							};
 							img.src = iconUrl;
+							
+							if (faviconFound) return;
 						} catch (e) {
-							attemptsCount++;
 							continue;
 						}
 					}
@@ -193,10 +198,19 @@ export function LinkCardComponent(properties, children) {
 				];
 				
 				for (const path of commonPaths) {
+					if (faviconFound) break;
+					
 					try {
 						const iconUrl = new URL(path, baseUrl).href;
 						const img = new Image();
+						const timeout = setTimeout(() => {
+							if (!faviconFound) {
+								img.src = '';
+							}
+						}, 2000);
+						
 						img.onload = () => {
+							clearTimeout(timeout);
 							if (!faviconFound) {
 								iconEl.style.backgroundImage = 'url(' + iconUrl + ')';
 								iconEl.style.backgroundColor = 'transparent';
@@ -204,27 +218,13 @@ export function LinkCardComponent(properties, children) {
 							}
 						};
 						img.onerror = () => {
-							attemptsCount++;
-							if (attemptsCount >= maxAttempts && !faviconFound) {
-								// Use default if all attempts failed
-								iconEl.style.backgroundImage = 'url(' + defaultIconUrl + ')';
-								iconEl.style.backgroundColor = 'transparent';
-							}
+							clearTimeout(timeout);
 						};
 						img.src = iconUrl;
 					} catch (e) {
-						attemptsCount++;
 						continue;
 					}
 				}
-				
-				// Final fallback: if no favicon found after a short delay, use default
-				setTimeout(() => {
-					if (!faviconFound && iconEl) {
-						iconEl.style.backgroundImage = 'url(' + defaultIconUrl + ')';
-						iconEl.style.backgroundColor = 'transparent';
-					}
-				}, 1500);
 			}
 			
 			try {
@@ -235,13 +235,13 @@ export function LinkCardComponent(properties, children) {
 					const doc = parser.parseFromString(html, 'text/html');
 					
 					// Try to get title from multiple sources
-					let title = null;
 					if (!${properties.title ? "true" : "false"}) {
-						title = doc.querySelector('meta[property="og:title"]')?.getAttribute('content') ||
-						        doc.querySelector('meta[name="twitter:title"]')?.getAttribute('content') ||
-						        doc.querySelector('title')?.textContent?.trim() ||
-						        doc.querySelector('h1')?.textContent?.trim() ||
-						        '${domain}';
+						const ogTitle = doc.querySelector('meta[property="og:title"]')?.getAttribute('content');
+						const twitterTitle = doc.querySelector('meta[name="twitter:title"]')?.getAttribute('content');
+						const metaTitle = doc.querySelector('title')?.textContent?.trim();
+						const h1Title = doc.querySelector('h1')?.textContent?.trim();
+						
+						const title = ogTitle || twitterTitle || metaTitle || h1Title || '${domain}';
 						
 						if (titleEl && title) {
 							titleEl.innerText = title;
@@ -249,21 +249,23 @@ export function LinkCardComponent(properties, children) {
 					}
 					
 					// Try to get description from multiple sources
-					let description = null;
 					if (!${properties.description ? "true" : "false"}) {
-						description = doc.querySelector('meta[property="og:description"]')?.getAttribute('content') ||
-						              doc.querySelector('meta[name="twitter:description"]')?.getAttribute('content') ||
-						              doc.querySelector('meta[name="description"]')?.getAttribute('content') ||
-						              doc.querySelector('meta[property="og:site_name"]')?.getAttribute('content') ||
-						              'No description available';
+						const ogDesc = doc.querySelector('meta[property="og:description"]')?.getAttribute('content');
+						const twitterDesc = doc.querySelector('meta[name="twitter:description"]')?.getAttribute('content');
+						const metaDesc = doc.querySelector('meta[name="description"]')?.getAttribute('content');
+						const siteName = doc.querySelector('meta[property="og:site_name"]')?.getAttribute('content');
+						
+						const description = ogDesc || twitterDesc || metaDesc || siteName || 'No description available';
 						
 						if (descEl && description) {
 							descEl.innerText = description;
 						}
 					}
 					
-					// Try to get favicon
-					updateFavicon(doc, '${url}', '${domain}');
+					// Try to get favicon (async, won't block)
+					updateFavicon(doc, '${url}').catch(() => {
+						// Favicon fetch failed, keep using Google favicon (already set as default)
+					});
 				} else {
 					throw new Error('Failed to fetch HTML from all proxies');
 				}
@@ -274,13 +276,6 @@ export function LinkCardComponent(properties, children) {
 				// Fallback: use domain as title and default description
 				${!properties.title ? `if (titleEl) titleEl.innerText = '${domain}';` : ""}
 				${!properties.description ? `if (descEl) descEl.innerText = 'No description available';` : ""}
-				
-				// Use default favicon on error
-				if (iconEl) {
-					const defaultIconUrl = 'https://www.google.com/s2/favicons?domain=${domain}&sz=64';
-					iconEl.style.backgroundImage = 'url(' + defaultIconUrl + ')';
-					iconEl.style.backgroundColor = 'transparent';
-				}
 				
 				card?.classList.remove("fetch-waiting");
 				card?.classList.add("fetch-error");
