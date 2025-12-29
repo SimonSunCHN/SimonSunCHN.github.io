@@ -9,14 +9,14 @@
 - 🌐 第一主修 普通语言学（General Linguistics）
 - 💻 第二主修 计算机科学（Computer Science）
 - 🏠 浙江萧山
-- 🏷️ ENT(/F)P
+- 🏷️ ENTP/ENFP
 - 🗣️ 语言（ISO 639 代码）
     - 普通话（zh-cmn），母语
-    - 吴语（萧山，zh-wuu），家庭语言
+    - 吴语/方言（萧山）（zh-wuu），家庭语言
     - 英语（en）
     - 日语（ja）
-    - 粤语（zh-yue）
-    - 法语（fr）（绿鸟初学者水平）
+    - 粤语/方言（zh-yue）
+    - 法语（fr），绿鸟初学者水平（x
 
 ## 这里有什么？
 

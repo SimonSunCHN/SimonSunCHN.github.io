@@ -1,5 +1,9 @@
 # 友链 | Friends
 
-[EmotionalEDM](https://emotionaledm.github.io/)
+::link{url="https://emotionaledm.github.io/" description="Where flowers bloom, where dreams come true. "}
 
-::github{repo="EmotionalEDM/EmotionalEDM.github.io"}
+::link{url="https://grapesea.github.io/Notebook/"}
+
+::link{url="https://hycrich.github.io/Faded.github.io/"}
+
+::link{url="https://neutralmilkzzz.github.io/"}
