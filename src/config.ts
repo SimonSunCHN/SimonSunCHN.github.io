@@ -71,11 +71,6 @@ export const profileConfig: ProfileConfig = {
 			url: "https://www.facebook.com/SimonSunCHN",
 		},
 		{
-			name: "Instagram",
-			icon: "fa6-brands:instagram",
-			url: "https://www.instagram.com/SimonSunCHN",
-		},
-		{
 			name: "BiliBili",
 			icon: "fa6-brands:bilibili",
 			url: "https://space.bilibili.com/86187142",
@@ -89,6 +84,11 @@ export const profileConfig: ProfileConfig = {
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/SimonSunCHN",
+		},
+		{
+			name: "Email",
+			icon: "ic:mail-outline",
+			url: "mailto:sun_gao@outlook.com",
 		},
 	],
 };
