@@ -1,6 +1,7 @@
 ---
 title: '2025 年回顾'
 published: 2026-01-02
+updated: 2026-01-02
 description: '各种各样的 “集邮” 合集'
 tags: ['生活']
 category: '碎碎念'
@@ -18,7 +19,7 @@ lang: 'zh-CN'
 
 截至 2025 年 12 月 31 日，完成进度 61 / 98。
 
-# 2. 一套 10 个集邮局的图案邮戳 A Set of 10 Pictorial Postmarks
+# 2. 10 个集邮局的图案邮戳 A Set of 10 Pictorial Postmarks
 
 ![pic-postmarks.jpg](pic-postmarks.jpg)
 
@@ -60,7 +61,7 @@ lang: 'zh-CN'
 - 10/17 CA727 HGH - HKG
 - 12/23 CA1734 SZX - HGH
 
-嘛……虽然一年飞了 8 次，但是只有 4 个机场：
+以及今年的 4 个机场：
 
 ![airports.jpg](airports.jpg)
 
@@ -75,7 +76,7 @@ lang: 'zh-CN'
 - 04/03 C8014 深圳 - 广州东
 - 04/05 G6513 广州南 - 深圳北
 - 05/01 G5606 香港西九龙 - 福田
-- 07/05 C636* 宁波 - 余姚 - 上虞 - 绍兴 G7526 绍兴北 - 杭州东
+- 07/05 C636 宁波 - 余姚 - 上虞 - 绍兴 G7526 绍兴北 - 杭州东
 - 07/11 C402 杭州 - 上海南
 - 07/12 G7553 上海南 - 杭州东
 - 07/14 G461 杭州东 - 长沙南 G537 长沙南 - 东安东
@@ -86,11 +87,11 @@ lang: 'zh-CN'
 
 ![yangming.jpg](yangming.jpg)
 
-> 绍兴城际 “阳明号”
+> 绍兴城际 “阳明号”（07/05）
 
 ![cr200j.jpg](cr200j.jpg)
 
-> AD 钙奶和 “AD 钙奶” CR200J
+> AD 钙奶和 “AD 钙奶” CR200J（07/05，C636）
 
 ![train-tickets.jpg](train-tickets.jpg)
 
