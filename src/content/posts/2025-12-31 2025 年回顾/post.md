@@ -4,7 +4,7 @@ published: 2026-01-02
 description: '各种各样的 “集邮” 合集'
 tags: ['生活']
 category: '碎碎念'
-draft: true 
+draft: false 
 lang: 'zh-CN'
 ---
 
