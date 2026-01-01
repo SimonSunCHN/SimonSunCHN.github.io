@@ -13,7 +13,7 @@ lang: 'zh-CN'
 
 > （注：如无特别说明，“今年” 指 2025 年。）
 
-# 1. 港铁 MTR 车站
+# 1. 港铁 “车站大亨” MTR Station Master
 
 ![mtr-stations.jpg](mtr-stations.jpg)
 
