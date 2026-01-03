@@ -5,9 +5,9 @@
 ## 关于 SimonSunCHN
 
 - 👤 SUN Gao, Simon
-- 🏫 HKU '28 (内地生 B27) BA（文学士）
-- 🌐 第一主修 普通语言学（General Linguistics）
-- 💻 第二主修 计算机科学（Computer Science）
+- 🏫 HKU '28（内地生 B27）BA（Bachelor of Arts, 文学士）
+- 🌐 第一主修：普通语言学（General Linguistics）
+- 💻 第二主修：计算机科学（Computer Science）
 - 🏠 浙江萧山
 - 🏷️ ENTP/ENFP
 - 🗣️ 语言（ISO 639 代码）
@@ -20,8 +20,8 @@
 
 ## 这里有什么？
 
-- 🌐 语言和语言学
-- 💻 计算机和编程
+- 🌐 语言/语言学
+- 💻 计算机/编程
 - 🚇 交通（包括大部分会动且载人的东西）
 - ✏️ 平面设计/字体排印/随手画
 - 🎵 音乐/歌词
