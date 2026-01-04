@@ -5,7 +5,7 @@
 ## 关于 SimonSunCHN
 
 - 👤 SUN Gao, Simon
-- 🏫 HKU '28（内地生 B27）BA（Bachelor of Arts, 文学士）
+- 🏫 HKU '28（内地生 B27）BA（Bachelor of Arts，文学士）
 - 🌐 第一主修：普通语言学（General Linguistics）
 - 💻 第二主修：计算机科学（Computer Science）
 - 🏠 浙江萧山

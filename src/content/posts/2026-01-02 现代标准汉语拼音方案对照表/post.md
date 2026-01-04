@@ -104,7 +104,7 @@ lang: 'zh-CN'
 | ia / ya | ㄧㄚ | ia / ya | ia / ya | ia / ya | ia | [iᴀ] |
 | io / yo | ㄧㄛ | io / yo | io / yo | io / yo | io | [iɔ] |
 | ie / ye | ㄧㄝ | ie / ye | ie / ye | ieh / yeh | ie | [iɛ] |
-| (iai / yai) ※1 | ㄧㄞ | iai / yai | iai / yai | ieh / yeh | ie | [iai] |
+| (iai / yai) ※1 | ㄧㄞ | iai / yai | iai / yai | iai / yai | iai | [iai] |
 | iao / yao | ㄧㄠ | iau / yau | iao  yao | iao / yao | iau | [iɑu] |
 | iou (iu) / you | ㄧㄡ | iou / you | iou / you | iu / yu | iou | [iou] |
 | ian / yan | ㄧㄢ | ian / yan | ian  yan | ien / yen | ian | [iɛn] |
