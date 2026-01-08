@@ -26,7 +26,7 @@ lang: 'zh-HK'
 唱：周華健、齊豫
 
 合：<font color=OrangeRed>愛怎麽做 怎麽錯 怎麽看 怎麽難 怎麽教人死生相隨 </font>\
-<font color=DodgerBlue>　　愛是愉快 是難過 是陶醉 是情緒 或在日後視作傳奇 </font>\
+<font color=DodgerBlue>&emsp;&emsp;愛是愉快 是難過 是陶醉 是情緒 或在日後視作傳奇 </font>\
 <font color=OrangeRed>　　愛是一種 不能說 只能嚐 的滋味 試過以後不醉不歸 </font>\
 <font color=DodgerBlue>　　愛是盟約 是習慣 是時間 是白髮 也叫你我乍驚乍喜 </font>\
 <font color=OrangeRed>　　等到紅顏憔悴 它卻依然如此完美 </font>\
