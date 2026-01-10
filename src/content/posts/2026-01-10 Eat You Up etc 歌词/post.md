@@ -1,9 +1,9 @@
 ---
-title: '荻野目洋子『ダンシング・ヒーロー (Eat You Up)』、陳慧嫻《跳舞街》、藍心湄《舞動的心》歌詞'
+title: '荻野目洋子『ダンシング・ヒーロー (Eat You Up)』、陳慧嫻《跳舞街》《舞動的心》歌詞'
 published: 2026-01-10
 updated: 2026-01-10
-description: '詞：林夕／曲：周華健'
-tags: ['歌词', '欧美音乐', '港乐', 'J-POP']
+description: '詞：篠原仁志；林敏驄；顧寧／曲：T. Baker, A. Kyte'
+tags: ['歌词', 'J-POP', '港乐', '国语音乐']
 category: '音乐'
 draft: false 
 lang: 'ja'
