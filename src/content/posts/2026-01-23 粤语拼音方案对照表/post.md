@@ -123,10 +123,10 @@ lang: 'zh-CN'
 | 腰 | iu | iu | iu | iu | iu | [iːu] |
 | 淹 | im | im | im | im | im | [iːm] |
 | 烟 | in | in | in | in | in | [iːn] |
-| 英 | ing | ing | ing | ing | ing | [ɪŋ] / [eŋ] |
+| 英 | ing | ing | ing | ing | ing | [ɪŋ], [eŋ] |
 | 叶 | ip | ib | ip | ip | ip | [iːp] |
 | 热 | it | id | it | it | it | [iːt] |
-| 益 | ik | ig | ik | ik | ik | [ɪk] / [ek] |
+| 益 | ik | ig | ik | ik | ik | [ɪk], [ek] |
 
 ## 合口呼
 
@@ -135,9 +135,9 @@ lang: 'zh-CN'
 | 乌 | u | u | u | u | oo | [uː] |
 | 煨 | ui | ui | ui | ui | ooi | [uːi] |
 | 碗 | un | un | un | un | oon | [uːn] |
-| 瓮 | ung | ung | ung | ung | ung | [ʊŋ] / [oŋ] |
+| 瓮 | ung | ung | ung | ung | ung | [ʊŋ], [oŋ] |
 | 活 | ut | ud | ut | ut | oot | [uːt] |
-| 屋 | uk | ug | uk | uk | uk | [ʊk] / [ok] |
+| 屋 | uk | ug | uk | uk | uk | [ʊk], [ok] |
 
 ## 撮口呼
 
@@ -147,7 +147,7 @@ lang: 'zh-CN'
 | 冤 | yun | ün | yn | yun | uen | [yːn] |
 | 月 | yut | üd | yt | yut | uet | [yːt] |
 
-## 鼻音韻
+## 鼻音韵
 
 | 例字 | 粤拼 | 广拼 | 教院 | 耶鲁 | 刘锡祥 | IPA |
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
