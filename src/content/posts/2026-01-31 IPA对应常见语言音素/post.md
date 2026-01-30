@@ -1,11 +1,11 @@
 ---
-title: '吴语拼音方案对照表'
-published: 2026-01-30
+title: '国际音标（IPA）对应常见语言音素'
+published: 2026-01-31
 updated: 2026-01-31
-description: '通用吴语拼音、吴语学堂式拼音、吴语拉丁式注音法、吴语音韵罗马字、国际音标（IPA）'
-tags: ['汉语', '吴语']
+description: ''
+tags: ['语音学', 'IPA']
 category: '语言学'
-draft: false
+draft: true
 lang: 'zh-CN'
 ---
 
