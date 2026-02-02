@@ -1,7 +1,7 @@
 ---
 title: '香港「十八區」、區域及地區内的分區地圖'
 published: 2026-01-31
-updated: 2026-01-31
+updated: 2026-02-02
 description: '地圖：區議會「十八區」圖、區域及地區内的分區圖（含港九部分放大圖）'
 image: './districts-hk.png'
 tags: ['地图', '地理']
