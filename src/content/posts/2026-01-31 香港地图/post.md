@@ -45,7 +45,7 @@ lang: 'zh-HK'
 
 - 地圖：
 
-    - China Hong Kong location map.svg，作者：Maximilian Dörrbecker (Chumwa)，取自[File:China Hong Kong location map.svg - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:China_Hong_Kong_location_map.svg)（原共享創意授權條款：CC BY-SA 3.0 Unported）；
+    - China Hong Kong location map.svg，作者：Maximilian Dörrbecker (Chumwa)，取自[File: China Hong Kong location map.svg - Wikimedia Commons](https://commons.wikimedia.org/wiki/File:China_Hong_Kong_location_map.svg)（原共享創意授權條款：CC BY-SA 3.0 Unported）；
 
 - 地區内的分區：
 
