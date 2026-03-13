@@ -13,3 +13,5 @@
 ::link{url="https://bobownyao.github.io/" title="Bobown's nest"}
 
 ::link{url="https://xtz206.top/" title="xtz206's Tech Station" description="xtz206's Tech Station, recording programming technology research and life bits."}
+
+::link{url="https://mikezhangziyi.github.io/blog/" title="Mike's Blog"}
