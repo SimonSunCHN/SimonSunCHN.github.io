@@ -76,14 +76,14 @@ export const profileConfig: ProfileConfig = {
 			url: "https://space.bilibili.com/86187142",
 		},
 		{
-			name: "Steam",
-			icon: "fa6-brands:steam",
-			url: "https://steamcommunity.com/profiles/76561199377838650",
-		},
-		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
 			url: "https://github.com/SimonSunCHN",
+		},
+		{
+			name: "LinkedIn",
+			icon: "fa6-brands:linkedin",
+			url: "https://www.linkedin.com/in/sun-gao/",
 		},
 		{
 			name: "Email",
