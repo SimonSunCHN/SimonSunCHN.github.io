@@ -1,7 +1,7 @@
 ---
 title: '闽南语拼音方案对照表'
-published: 2026-02-01
-updated: 2026-02-01
+published: 2026-04-28
+updated: 2026-04-28
 description: '白话字、台湾台语罗马字拼音方案、台湾方音符号系统、闽南语拼音方案、国际音标（IPA）'
 tags: ['汉语', '闽南语']
 category: '语言学'
