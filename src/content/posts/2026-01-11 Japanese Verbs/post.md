@@ -2,7 +2,7 @@
 title: '日语动词的分类与变化形式'
 published: 2026-01-12
 updated: 2026-01-12
-description: '動詞のグループと活用'
+description: '日本語動詞のグループと活用'
 tags: ['日语', '语法']
 category: '语言'
 draft: false 
@@ -250,6 +250,8 @@ lang: 'zh-CN'
 
 # 参考资料
 
-1. 人民教育出版社、光村図書出版株式会社《新版中日交流标准日本语　第二版　初级上、下》，人民教育出版社，2013.12
-2. 時雨の町 - 日文學習園地（[https://www.sigure.tw/](https://www.sigure.tw/)）
-3. Jack 的日語學習筆記（[https://main.jacknotes.digital/](https://main.jacknotes.digital/)）
+- 人民教育出版社、光村図書出版株式会社《新版中日交流标准日本语　第二版　初级上、下》，人民教育出版社，2013.12
+
+- 時雨の町 - 日文學習園地（[https://www.sigure.tw/](https://www.sigure.tw/)）
+
+- Jack 的日語學習筆記（[https://main.jacknotes.digital/](https://main.jacknotes.digital/)）
