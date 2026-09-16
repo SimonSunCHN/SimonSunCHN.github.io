@@ -1,6 +1,7 @@
 ---
 title: 'RIC “小锐的冬季魔法” 活动后记'
 published: 2025-12-30
+updated: 2026-09-16
 description: 'RIC 2025 Winter Puzzle Hunt 后记：出题灵感、过程、遗憾和致谢'
 image: './01.jpg'
 tags: ['RIC', 'Puzzle Hunt']
@@ -14,7 +15,7 @@ lang: 'zh-CN'
 距离 12 月 25 日 RIC “小锐的冬季魔法” 活动结束，也过去几天了。作为本次活动 PIC（负责人）之一及主要出题人，我想把自己出题的思路放在这里，以作参考。
 
 :::note[注意]
-本文并不是解析。正式活动的内容（题目、答案、解析、答对人数及名次等），见 <a href="https://ricwph.eseabs0.icu/" target="_blank" rel="noopener noreferrer">活动网页</a>。
+本文并不是解析。正式活动的内容（题目、答案、解析、答对人数及名次等），在活动网页。2026 年 3 月 19 日后，为节省运营成本，**网页已关停**。
 :::
 
 # 写在前面
