@@ -16,4 +16,4 @@
 
 ::link{url="https://mikeogilvy.github.io/blog/" title="Mike's Blog"}
 
-::link{url="https://riebecksblog.idv.hk/" title="Riebeck's Blog'" description="está lloviendo en Macondo"}
+::link{url="https://riebecksblog.idv.hk/" title="Riebeck's Blog" description="está lloviendo en Macondo"}
