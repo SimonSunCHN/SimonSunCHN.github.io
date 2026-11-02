@@ -14,7 +14,7 @@ lang: 'zh-CN'
 
 语言学学习中，常常用到国际音标（International Phonetic Alphabet，IPA）。在 Android 手机上，可以用 Gboard 简单地输入 IPA。然而在 PC 上，除了使用网页版的 IPA 键盘（如 [Lexilogos 提供的在线 IPA 键盘](https://www.lexilogos.com/keyboard/ipa.htm)），个人比较常用 [RIME | 中州韻輸入法引擎](https://rime.im/) 配合 X-SAMPA 输入法输入。
 
-为了方便对照输入，手搓了一张 IPA - X-SAMPA 对照表。
+为了方便对照输入，手搓了一张 IPA 与 X-SAMPA 的对照表。
 
 # 关于 X-SAMPA 与 SAMPROSA
 
