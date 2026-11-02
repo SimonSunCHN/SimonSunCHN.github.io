@@ -1,6 +1,6 @@
 ---
 title: '国际音标（IPA）与 X-SAMPA 对照表'
-published: 2026-11-03
+published: 2026-11-02
 updated: 2026-11-03
 description: '拓展音标字母评估法（Extended Speech Assessment Methods Phonetic Alphabet, X-SAMPA）'
 image: './IPA.png'
